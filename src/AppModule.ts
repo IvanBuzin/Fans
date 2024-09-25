@@ -1,6 +1,6 @@
 import { Module } from "@nestjs/common";
 import { SequelizeModule } from "@nestjs/sequelize";
-import { UserModule } from "./user/user.module"; // модуль для роботи з користувачами
+import { UserModule } from "./user/module"; // модуль для роботи з користувачами
 import { ConfigModule } from "@nestjs/config";
 
 @Module({
