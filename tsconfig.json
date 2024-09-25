@@ -8,7 +8,7 @@
     "forceConsistentCasingInFileNames": true,
     "composite": true
   },
-  "include": ["src/**/*.ts"],
+  "include": ["src/**/*.ts", "src/main.tsx"],
   "exclude": ["node_modules"],
   "files": [],
   "references": [
