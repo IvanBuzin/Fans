@@ -1,11 +1,11 @@
 import { Module } from "@nestjs/common";
 import { SequelizeModule } from "@nestjs/sequelize";
-import { UserModule } from "./user/user.module"; // Модуль користувачів
+import { UserModule } from "./user/user.module";
 import { ConfigModule } from "@nestjs/config";
 
 @Module({
   imports: [
-    ConfigModule.forRoot(), // Для роботи з .env
+    ConfigModule.forRoot(),
     SequelizeModule.forRoot({
       dialect: "mysql",
       host: process.env.DB_HOST || "localhost",
@@ -17,7 +17,7 @@ import { ConfigModule } from "@nestjs/config";
       autoLoadModels: true,
       synchronize: true,
     }),
-    UserModule, // Підключаємо модуль користувачів
+    UserModule,
   ],
 })
 export class AppModule {}
